@@ -1,0 +1,564 @@
+// === Imports ===
+
+@import "normalize.scss";
+
+// === Imports ===
+
+
+// === Mixin ===
+
+// === Mixin ===
+
+// === Common ===
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+// === Common ===
+
+.wrapper{
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.color-wrapper{
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0.05%, #F5F5F5 99.01%);
+}
+
+// === Header ===
+
+.header{
+  margin-bottom: 36px;
+  margin-top: 36px;
+  &-inner{
+    display: flex;
+    justify-content: space-between;
+    &-logo{}
+    &-input{
+      .input-search{
+        width: 31vw;
+        height: 40px;
+        background-image: url(../img/home.svg);
+        background-repeat: no-repeat;
+        font-size: 16px;
+        border: 1px solid #D9D9D9;
+        line-height: 24px;
+        border-radius: 2px;
+        background-position: left 11px center;
+        padding-left: 35px;
+      }
+    }
+    &-buttons{
+      .button-login{
+        color: #FFFFFF;
+        width: 96px;
+        height: 40px;
+        background: #1890FF;
+        border-radius: 2px;
+        border-style: none;
+        background-image: url(../img/vector.svg);
+        background-repeat: no-repeat;
+        background-position: left 18px center;
+        padding-left: 24px;
+        margin-right: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .button-cart{
+        width: 113px;
+        height: 40px;
+        background-image: url(../img/cart.svg);
+        background-repeat: no-repeat;
+        background-position: left 17px center;
+        padding-left: 35px;
+        border: 1px solid #D9D9D9;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+        border-radius: 2px;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+// === Header ===
+
+// === Promo ===
+
+.promo{
+  &-inner{
+    background: #FFF1B8 url('../img/pizza.png') no-repeat top -388px right -114px/894px;
+    border-radius: 10px;
+    padding: 68px 70px;
+    box-shadow:(0px 7px 12px rgba(158, 158, 163, 0.1));
+    &-title{
+      font-weight: bold;
+      font-size: 39px;
+      line-height: 46px;
+      color: #302C34;
+    }
+    &-subtitle{
+      font-size: 24px;
+      line-height: 28px;
+      color: #302C34;
+    }
+  }
+}
+
+// === Promo ===
+
+// === Content ===
+
+.content{
+  &-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-title{
+      font-size: 36px;
+      line-height: 42px;
+      color: #000000;
+    }
+    &-search{
+      .search{
+        width: 38vw;
+        height: 40px;
+        background-image: url(../img/search.svg);
+        background-repeat: no-repeat;
+        font-size: 16px;
+        border: 1px solid #D9D9D9;
+        line-height: 24px;
+        border-radius: 2px;
+        background-position: left 11px center;
+        padding-left: 35px;
+      }
+    }
+  }
+  &-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &-card{
+      text-decoration: none;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 35px;
+      border-radius: 7px;
+      overflow: hidden;
+      flex-basis: 30%;
+      &-image{
+        border-radius: 7px;
+        object-fit: cover;
+      }
+      &-text{
+        line-height: 32px;
+        margin-left:  24px;
+        margin-bottom: 35px;
+        &-header{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &-title{
+            font-size: 24px;
+          }
+          &-time{
+            background: #262626;
+            border-radius: 2px;
+            color: white;
+            margin-right: 26px;
+            line-height: 20px;
+            font-size: 12px;
+            padding: 1px 8px;
+          }
+        }
+        &-info{
+          display: flex;
+          justify-content: left;
+          &-rating{
+            background: url('../img/ratingstar.svg') no-repeat;
+            background-position: left center;
+            align-items: center;
+            padding-left: 24px;
+            margin-right: 16px;
+            color: #FFC107;
+            font-weight: bold;
+            font-size: 18px;
+          }
+          &-price{
+            color: #8C8C8C;
+            font-size: 18px;
+            margin-right: 20px;
+          }
+          &-category{
+            color: #8C8C8C;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+// === Content ===
+
+// === Footer ===
+
+.footer{
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-block{
+      display: flex;
+      align-items: center;
+      &-logo{
+        margin-right: 35px;
+      }
+      &-nav{
+        &-link{
+          text-decoration: none;
+          color: #595959;
+        }
+      }
+    }
+    &-links{
+      &-link{
+        margin-left: 21px;
+      }
+    }
+  }
+}
+
+// === Footer ===
+
+
+//=== Modal Window ===
+
+.modal{
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  &-dialog{
+    max-width: 780px;
+    width: 95%;
+    min-height: 552px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: auto;
+    &-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-title{
+        margin-left: 45px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        margin-top: 50px;
+      }
+      &-close{
+        margin-right: 45px;
+        margin-top: 50px;
+        border: none;
+        background-color: white;
+        font-size: 50px;
+        margin-bottom: 40px;
+      }
+    }
+    &-list{
+      margin-bottom: 15px;
+      margin-right: 45px;
+      margin-left: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #D9D9D9;
+      padding-bottom: 8px;
+      padding-top: 1px;
+      &-name{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+      }
+      &-price{
+        margin-left: auto;
+        margin-right: 47px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 32px;
+      }
+      &-counter{
+        &-buttonminus{
+          width: 39px;
+          height: 32px;
+          background: #FFFFFF;
+          border: 1px solid #40A9FF;
+          box-sizing: border-box;
+          border-radius: 2px;
+          font-family: SF Pro Display;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          color: #40A9FF;
+        }
+        &-count{
+          margin-right: 13px;
+          margin-left: 13px;
+          font-family: SF Pro Display;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+        }
+        &-buttonplus{
+          width: 39px;
+          height: 32px;
+          background: #FFFFFF;
+          border: 1px solid #40A9FF;
+          box-sizing: border-box;
+          border-radius: 2px;
+          font-family: SF Pro Display;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          color: #40A9FF;
+        }
+      }
+    }
+    &-footer{
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 45px;
+      margin-right: 45px;
+      &-summaryprice{
+        background: #262626;
+        border-radius: 5px;
+        width: 106px;
+        height: 53px;
+        border: none;
+        color: white;
+      }
+      &-confirm{
+        margin-left: auto;
+        margin-right: 18px;
+        width: 149px;
+        height: 40px;
+        background: #1890FF;
+        border-radius: 2px;
+        border: none;
+      }
+      &-cancle{
+        background: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        box-sizing: border-box;
+        border-radius: 2px;
+        width: 88px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+//=== Modal Window ===
+
+// === Media ===
+
+@media (max-width: 1366px){
+  .wrapper, .footer{
+    max-width: 960px;
+  }
+  .promo-inner{
+    background: #FFF1B8 url("../img/pizza.png") no-repeat top -294px right -268px/777px;
+  }
+}
+
+@media (max-width: 992px){
+  .wrapper, .footer{
+    max-width: 750px;
+  }
+  .promo-inner{
+    background: #FFF1B8 url("../img/pizza.png") no-repeat top -268px right -495px/777px;
+  }
+  .content-cards-card{
+    flex-basis: 48%;
+  }
+  .promo-inner{
+    padding: 40px 40px;
+    &-title{
+      font-size: 30px;
+    }
+    &-subtitle{
+      font-size: 24px;
+    }
+  }
+  .content-cards-card-text-header-title{
+    font-size: 20px;
+  }
+  .content-header-title-text{
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px){
+  .wrapper, .footer{
+    max-width: 560px;
+  }
+  .promo-inner{
+    background: #FFF1B8 url("../img/pizza.png") no-repeat top -268px right -445px/700px;
+  }
+  .content-cards-card{
+    flex-basis: 48%;
+  }
+  .promo-inner{
+    padding: 30px 30px;
+    &-title{
+      font-size: 24px;
+    }
+    &-subtitle{
+      font-size: 16px;
+    }
+  }
+  .content-cards-card-text-header-title{
+    font-size: 16px;
+  }
+  .content-header-title-text{
+    font-size: 30px;
+  }
+  .footer-inner-block-nav-link{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 578px){
+  .wrapper, .footer{
+    width: 90%;
+  }
+  .promo-inner{
+    background: #FFF1B8 url("../img/pizza.png") no-repeat top -268px right -445px/700px;
+  }
+  .content-cards-card{
+    flex-basis: 100%;
+  }
+  .promo-inner{
+    padding: 30px 30px;
+    &-title{
+      font-size: 24px;
+    }
+    &-subtitle{
+      font-size: 16px;
+    }
+  }
+  .content-cards-card-text-header-title{
+    font-size: 16px;
+  }
+  .content-header-title-text{
+    font-size: 30px;
+  }
+  .header-inner{
+    flex-wrap: wrap;
+  }
+  .header-inner-input{
+    order: 5;
+    margin-top: 16px;
+    flex: 1;
+  }
+  .content-cards-card-image{
+    width: 100%;
+  }
+  .footer-inner-nav{
+    flex-wrap: wrap;
+  }
+}
+
+
+//===
+//===  Restuarant ===
+//===
+
+.active{
+  display: flex;
+}
+
+.disactive{
+  display: none;
+}
+
+.content-header-restuarant{
+  display: flex;
+  justify-content: left;
+  &-info{
+    margin-left: 30px;
+  }
+}
+
+.content-cards-card-text-header-title-reg{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 14px;
+}
+
+.reg-subtitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
+}
+
+.buttons{
+  align-items: center;
+  &-button{
+    background: #1890FF;
+    border-radius: 2px;
+    border: none;
+    background-image: url(../img/shopping-cart.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+    height: 40px;
+    color: white;
+    margin-top: 25px;
+  }
+}
+
+.reg-price{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  margin-left: 38px;
+}
